@@ -1,20 +1,55 @@
-<<<<<<< HEAD
-# React + Vite
+# Sri Mookambika Catering Services
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive catering business website built using **React.js, Tailwind CSS, and Vite**.
+This project showcases catering services, menu categories, gallery images, and contact options for customers.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://mookambika-catering-services-rho.vercel.app
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Sticky navigation bar
+* Hero section with sliding background images
+* Services section
+* Menu categories
+* Image gallery
+* About section
+* Contact form
+* Google Maps integration
+* Phone, WhatsApp, and Instagram links
+* Responsive design
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# mookambika-catering-services
->>>>>>> 525a412f6cdb31a3b9bc17789dadd79bfdb5e1cd
+* React.js
+* Tailwind CSS
+* JavaScript
+* Vite
+* GitHub
+* Vercel
+
+## Run Locally
+
+Clone the repository
+
+```
+git clone https://github.com/Amithkumar2003/mookambika-catering-services.git
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the development server
+
+```
+npm run dev
+```
+
+## Author
+
+Amith Kumar
+GitHub: https://github.com/Amithkumar2003
