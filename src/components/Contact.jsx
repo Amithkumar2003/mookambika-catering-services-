@@ -93,7 +93,7 @@ function Contact() {
               </a>
 
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919480209088"
                 target="_blank"
                 className="text-green-500 hover:scale-110 transition"
               >

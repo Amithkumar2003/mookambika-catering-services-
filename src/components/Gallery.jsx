@@ -44,6 +44,21 @@ function Gallery() {
             alt="Food Arrangement"
             className="rounded-xl shadow-md w-full h-64 object-cover hover:scale-105 transition"
           />
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepujNYX8E55Ax5lfVZIhrsAn4FAkGbvT-xQtHou-ZUX0xVSjuH2EpcCWd7XAnyxBNVQGMmBOtAgWSmv4b2tkSCZFfgq8rFurQ5TWjuB9TVxon1UGVvmXm_gwdjUs1J2Y4Gzf3FgZw=s1360-w1360-h1020-rw"
+            alt="Food Arrangement"
+            className="rounded-xl shadow-md w-full h-64 object-cover hover:scale-105 transition"
+          />
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipNR3U6HOpO9BkNOY6xrVrAz0RhpFh2RImXW3sUo=s1360-w1360-h1020-rw"
+            alt="Food Arrangement"
+            className="rounded-xl shadow-md w-full h-64 object-cover hover:scale-105 transition"
+          />
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPkHED79W2B0lkwBgwLwS-Pbxs4dMCxDn_awlae=s1360-w1360-h1020-rw"
+            alt="Food Arrangement"
+            className="rounded-xl shadow-md w-full h-64 object-cover hover:scale-105 transition"
+          />
 
         </div>
 
