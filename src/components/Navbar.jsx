@@ -1,90 +1,90 @@
 import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-red-600 text-white fixed w-full z-50 shadow-md">
+    <nav className="bg-red-600/90 backdrop-blur-md text-white fixed w-full z-50 shadow-md">
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
 
-      <div className="max-w-7xl mx-auto px-4">
+<div className="flex items-center gap-1">
+        {/* Logo */}
+        <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-full grid grid-cols-3 grid-rows-3 place-items-center text-red-700 font-bold shadow-lg border border-white">
+  {/* Top */}
+  <span className="col-start-2 row-start-1 text-[14px]">M</span>
 
-        <div className="flex justify-between items-center h-16">
+  {/* Left */}
+  <span className="col-start-1 row-start-2 text-[15px]">M</span>
 
-          {/* Logo */}
-          <div className="flex items-center gap-3">
+  {/* Center */}
+  <span className="col-start-2 row-start-2 text-base font-bold">C</span>
 
-  {/* Logo Circle */}
-  <div className="relative w-12 h-12 md:w-14 md:h-14 bg-red-700 rounded-full flex items-center justify-center shadow-lg">
+  {/* Right */}
+  <span className="col-start-3 row-start-2 text-[15px]">S</span>
 
-    {/* Top M */}
-    <span className="absolute top-1 text-white text-xs md:text-sm font-bold">
-      M
-    </span>
-
-    {/* Left M */}
-    <span className="absolute left-1 top-1/2 -translate-y-1/2 text-white text-xs md:text-sm font-bold">
-      M
-    </span>
-
-    {/* Right S */}
-    <span className="absolute right-1 top-1/2 -translate-y-1/2 text-white text-xs md:text-sm font-bold">
-      S
-    </span>
-
-    {/* Bottom S */}
-    <span className="absolute bottom-1 text-white text-xs md:text-sm font-bold">
-      S
-    </span>
-
-    {/* Center C */}
-    <span className="text-yellow-400 text-sm md:text-lg font-bold">
-      C
-    </span>
-
-  </div>
+  {/* Bottom */}
+  <span className="col-start-2 row-start-3 text-[15px]">S</span>
 
 </div>
 
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6 text-lg">
-            <li><a href="#home" className="hover:text-yellow-300">Home</a></li>
-            <li><a href="#services" className="hover:text-yellow-300">Services</a></li>
-            <li><a href="#menu" className="hover:text-yellow-300">Menu</a></li>
-            <li><a href="#gallery" className="hover:text-yellow-300">Gallery</a></li>
-            <li><a href="#about" className="hover:text-yellow-300">About</a></li>
-            <li><a href="#contact" className="hover:text-yellow-300">Contact</a></li>
-          </ul>
+ <div className="leading-tight ml-1">
+    <h1 className="text-sm md:text-lg font-semibold">
+      Sri. Mookambika Catering Services
+    </h1>
+    <p className="text-[10px] md:text-xs text-yellow-200">
+      Where Every Bite Is Delight...
+    </p>
+  </div>
 
-          {/* Mobile Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-2xl"
-          >
-            ☰
-          </button>
+ </div>
+   
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-6 font-medium">
+          <li><a href="#home" className="hover:text-yellow-300">Home</a></li>
+          <li><a href="#services" className="hover:text-yellow-300">Services</a></li>
+          <li><a href="#menu" className="hover:text-yellow-300">Menu</a></li>
+          <li><a href="#gallery" className="hover:text-yellow-300">Gallery</a></li>
+          <li><a href="#about" className="hover:text-yellow-300">About</a></li>
+          <li><a href="#contact" className="hover:text-yellow-300">Contact</a></li>
+        </ul>
 
+        {/* Mobile Menu Button */}
+        <div className="md:hidden text-xl cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
-
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-red-600 text-white shadow-lg">
+      {menuOpen && (
+  <div className="md:hidden bg-red-700 px-6 py-4 flex flex-col items-center space-y-4 text-center">
 
-          <div className="flex flex-col items-center space-y-4 py-4 text-lg">
+    <a href="#home" onClick={() => setMenuOpen(false)} className="block w-full">
+      Home
+    </a>
 
-            <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
-            <a href="#menu" onClick={() => setIsOpen(false)}>Menu</a>
-            <a href="#gallery" onClick={() => setIsOpen(false)}>Gallery</a>
-            <a href="#about" onClick={() => setIsOpen(false)}>About</a>
-            <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+    <a href="#services" onClick={() => setMenuOpen(false)} className="block w-full">
+      Services
+    </a>
 
-          </div>
+    <a href="#menu" onClick={() => setMenuOpen(false)} className="block w-full">
+      Menu
+    </a>
 
-        </div>
-      )}
+    <a href="#gallery" onClick={() => setMenuOpen(false)} className="block w-full">
+      Gallery
+    </a>
 
+    <a href="#about" onClick={() => setMenuOpen(false)} className="block w-full">
+      About
+    </a>
+
+    <a href="#contact" onClick={() => setMenuOpen(false)} className="block w-full">
+      Contact
+    </a>
+
+  </div>
+)}
     </nav>
   );
 }

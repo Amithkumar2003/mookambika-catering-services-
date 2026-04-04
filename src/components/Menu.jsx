@@ -132,7 +132,7 @@ function Menu() {
   const [selectedCategory, setSelectedCategory] = useState("Welcome Drink");
 
   return (
-    <section id="menu" className="py-20 bg-gray-100">
+    <section id="menu" className="py-16 md:py-20 bg-white">
 
       <div className="max-w-7xl mx-auto px-4">
 

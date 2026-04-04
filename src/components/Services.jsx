@@ -1,79 +1,78 @@
+import { FaUtensils, FaGlassCheers, FaLeaf } from "react-icons/fa";
+
 function Services() {
+  const services = [
+  {
+    icon: <FaGlassCheers size={30} />,
+    title: "Wedding Catering",
+    desc: "Grand traditional catering services for weddings with authentic flavors.",
+  },
+  {
+    icon: <FaUtensils size={30} />,
+    title: "Corporate Catering",
+    desc: "Professional catering solutions for meetings, offices, and corporate events.",
+  },
+  {
+    icon: <FaGlassCheers size={30} />,
+    title: "Birthday Parties",
+    desc: "Delicious food arrangements to make your celebrations joyful and memorable.",
+  },
+  {
+    icon: <FaLeaf size={30} />,
+    title: "South Indian Cuisine",
+    desc: "Authentic South Indian meals prepared with traditional recipes.",
+  },
+  {
+    icon: <FaUtensils size={30} />,
+    title: "Andhra Style",
+    desc: "Spicy and flavorful Andhra-style dishes loved for their rich taste.",
+  },
+  {
+    icon: <FaLeaf size={30} />,
+    title: "Tamil Style",
+    desc: "Traditional Tamil Nadu dishes with homely taste and quality.",
+  },
+];
+
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+   <section id="services" className="py-16 md:py-20 bg-gray-100">
 
-        <h2 className="text-4xl font-bold text-red-700 mb-12">
-          Our Catering Services
+      {/* Heading */}
+      <div className="text-center mb-12 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          Our Services
         </h2>
+        <p className="text-gray-600 max-w-xl mx-auto">
+          We provide high-quality catering services tailored for every occasion.
+        </p>
+      </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+      {/* Cards */}
+      <div className="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3">
 
-          {/* Wedding Catering */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition">
-            <img
-              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed"
-              alt="Wedding Catering"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">Wedding Catering</h3>
-              <p className="text-gray-600">
-                Elegant catering services for unforgettable wedding celebrations.
-              </p>
+        {services.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2"
+          >
+            <div className="text-red-600 mb-4 flex justify-center">
+              {item.icon}
             </div>
-          </div>
 
-          {/* Birthday Catering */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition">
-            <img
-              src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3"
-              alt="Birthday Party"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">Birthday Parties</h3>
-              <p className="text-gray-600">
-                Delicious food and professional service for birthday parties.
-              </p>
-            </div>
-          </div>
+            <h3 className="text-xl font-semibold mb-2">
+              {item.title}
+            </h3>
 
-          {/* Corporate Events */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition">
-            <img
-              src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-              alt="Corporate Catering"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">Corporate Events</h3>
-              <p className="text-gray-600">
-                High-quality catering for corporate meetings and events.
-              </p>
-            </div>
+            <p className="text-gray-600 text-sm">
+              {item.desc}
+            </p>
           </div>
-
-          {/* Outdoor Catering */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition">
-            <img
-              src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-              alt="Outdoor Catering"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">Outdoor Catering</h3>
-              <p className="text-gray-600">
-                Professional outdoor catering for all types of events.
-              </p>
-            </div>
-          </div>
-
-        </div>
+        ))}
 
       </div>
+
     </section>
-  )
+  );
 }
 
-export default Services
+export default Services;

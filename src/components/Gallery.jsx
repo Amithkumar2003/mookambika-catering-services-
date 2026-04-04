@@ -1,6 +1,6 @@
 function Gallery() {
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         <h2 className="text-4xl font-bold text-red-700 mb-12">
