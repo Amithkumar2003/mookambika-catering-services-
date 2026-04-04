@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "public/Meal3.jpeg",
-  "public/Meal2.jpeg",
-  "public/Meal1.jpeg",
+  "public/images/Meal3.jpeg",
+  "public/images/Meal1.jpeg",
+  "public/images/Meal2.jpeg",
 ];
 
 function Hero() {
