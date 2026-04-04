@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "public/WhatsApp Image 2026-04-02 at 9.52.49 PM.jpeg",
-  "public/WhatsApp Image 2026-04-02 at 9.51.58 PM.jpeg",
-  "public/WhatsApp Image 2026-04-02 at 9.51.37 PM.jpeg",
+  "public/Meal3.jpeg",
+  "public/Meal2.jpeg",
+  "public/Meal1.jpeg",
 ];
 
 function Hero() {
@@ -54,14 +54,14 @@ function Hero() {
         <div className="flex flex-col md:flex-row gap-4 mt-2">
 
           <a
-            href="tel:+9194802 09088"
+            href="tel:+919480209088"
             className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300"
           >
             Call Now
           </a>
 
           <a
-            href="https://wa.me/9194802 09088"
+            href="https://wa.me/919480209088"
             target="_blank"
             className="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-400"
           >
