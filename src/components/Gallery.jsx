@@ -40,7 +40,7 @@ function Gallery() {
           />
 
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwep_KEOeBMUygFKhEPYjmDPhJmmVcOcdy8QxZLKE9r86ZntNCu9UMB3b85yQYiPA8gpgtJMu7RolSNO0tr-BKqfY0tDawMyqSdk7O8ioM0wFd9n8r7wFweqI_733jNJVIzCr042Q=s1360-w1360-h1020-rw"
+            src="https://lh3.googleusercontent.com/p/AF1QipPuhFiIJ50yTqe0kv6N78WfpV7fEO2dI2hEWnea=w229-h164-n-k-no-nu"
             alt="Food Arrangement"
             className="rounded-xl shadow-md w-full h-64 object-cover hover:scale-105 transition"
           />
