@@ -6,7 +6,7 @@ This project showcases catering services, menu categories, gallery images, and c
 
 ## Live Website
 
-https://mookambika-catering-services-rho.vercel.app
+https://mookambika-catering.vercel.app/
 
 ## Features
 
